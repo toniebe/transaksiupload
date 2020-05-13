@@ -90,5 +90,13 @@ public class TransaksiController {
                 .body(new ByteArrayResource(dbFile.getData()));
     }
 
+    @PostMapping("/lansgung")
+    public ResponseEntity<?> postTransaksi(@RequestBody Transaksi transaksi){
+        transaksiRepository.save(transaksi);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("message","transaksi berhasil");
+        return new ResponseEntity<>(jsonObject,HttpStatus.OK);
+    }
+
 
 }
