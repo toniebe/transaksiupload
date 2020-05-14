@@ -24,7 +24,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 
 @RestController
-@RequestMapping("/transaksi")
+@RequestMapping("/api/transaksi")
 public class TransaksiController {
     private static final Logger logger = LoggerFactory.getLogger(TransaksiController.class);
 

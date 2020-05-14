@@ -15,7 +15,7 @@ public class Transaksi {
     private String provider;
     private float harga;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date tanggal;
 
     public Transaksi() {
